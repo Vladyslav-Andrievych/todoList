@@ -2,7 +2,7 @@ import { renderTasks } from './renderTasks.js';
 import { setItem, getItem } from './storage.js';
 import { createTask, getTasks } from './tasksGateway.js';
 
-function counter() {
+export function counter() {
   let count = 5;
 
   return function () {
