@@ -1,6 +1,6 @@
-import { renderTasks } from './renderTasks.js';
-import { setItem } from './storage.js';
-import { deleteTask, getTasks } from './tasksGateway.js';
+import { renderTasks } from './renderTasks';
+import { setItem } from './storage';
+import { deleteTask, getTasks } from './tasksGateway';
 
 export const onDeleteTask = (event) => {
   deleteTask(event.target.dataset.id)

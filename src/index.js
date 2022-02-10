@@ -1,7 +1,7 @@
-import { initHandlers } from './scripts/handlers.js';
-import { renderTasks } from './scripts/renderTasks.js';
-import { setItem } from './scripts/storage.js';
-import { getTasks } from './scripts/tasksGateway.js';
+import { initHandlers } from './scripts/handlers';
+import { renderTasks } from './scripts/renderTasks';
+import { setItem } from './scripts/storage';
+import { getTasks } from './scripts/tasksGateway';
 import './index.scss';
 
 document.addEventListener('DOMContentLoaded', () => {

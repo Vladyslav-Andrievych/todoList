@@ -1,6 +1,6 @@
-import { renderTasks } from './renderTasks.js';
-import { setItem, getItem } from './storage.js';
-import { createTask, getTasks } from './tasksGateway.js';
+import { renderTasks } from './renderTasks';
+import { setItem } from './storage';
+import { createTask, getTasks } from './tasksGateway';
 
 export function counter() {
   let count = 5;
@@ -13,7 +13,7 @@ export function counter() {
 
 const createId = counter();
 
-export const onCreateTask = (event) => {
+export const onCreateTask = () => {
   const taskInputElem = document.querySelector('.task-input');
 
   const text = taskInputElem.value;

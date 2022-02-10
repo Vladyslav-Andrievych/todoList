@@ -1,6 +1,6 @@
-import { onCreateTask } from './createTask.js';
-import { onDeleteTask } from './deleteTask.js';
-import { onClickCkeckbox } from './upDateTask.js';
+import { onCreateTask } from './createTask';
+import { onDeleteTask } from './deleteTask';
+import { onClickCkeckbox } from './upDateTask';
 
 const onListElemClick = (event) => {
   const isCheckbox = event.target.classList.contains('list__item-checkbox');
@@ -11,7 +11,6 @@ const onListElemClick = (event) => {
   const isDeleteBtn = event.target.classList.contains('delete-btn');
   if (isDeleteBtn) {
     onDeleteTask(event);
-    return;
   }
 };
 
